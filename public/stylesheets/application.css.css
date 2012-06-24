@@ -1,0 +1,144 @@
+/* line 1, ../../app/assets/stylesheets/application.css.scss */
+body {
+  font-family: sans-serif;
+  margin: 0px auto;
+  min-width: 910px;
+  background-color: #433222;
+  text-align: left;
+}
+
+/* line 9, ../../app/assets/stylesheets/application.css.scss */
+h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+/* line 15, ../../app/assets/stylesheets/application.css.scss */
+h2 {
+  color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+/* line 21, ../../app/assets/stylesheets/application.css.scss */
+p {
+  color: #C2C2C2;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* line 26, ../../app/assets/stylesheets/application.css.scss */
+a {
+  text-decoration: underline;
+  color: yellow;
+  font-size: 13px;
+}
+
+/* line 32, ../../app/assets/stylesheets/application.css.scss */
+.document_headers {
+  width: 778px;
+  margin: 0px auto;
+  padding-top: 10px;
+}
+
+/* line 38, ../../app/assets/stylesheets/application.css.scss */
+.logo {
+  background-image: url("/images/div_logo.png");
+  background-repeat: no-repeat;
+  width: 778px;
+  height: 215px;
+  margin: 0px auto;
+  padding-top: 7px;
+}
+/* line 45, ../../app/assets/stylesheets/application.css.scss */
+.logo img {
+  position: absolute;
+  margin-top: 15px;
+}
+/* line 49, ../../app/assets/stylesheets/application.css.scss */
+.logo p#text {
+  margin: 0px 0px;
+  color: blue;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  left: 420px;
+  top: 60px;
+}
+
+/* line 59, ../../app/assets/stylesheets/application.css.scss */
+.logo_img {
+  background-image: url("/images/logo.jpeg");
+  width: 759px;
+  height: 199px;
+  margin: 0px auto;
+}
+
+/* line 66, ../../app/assets/stylesheets/application.css.scss */
+.headers {
+  background-image: url("/images/zahlavi.png");
+  width: 100%;
+  height: 300px;
+}
+
+/* line 72, ../../app/assets/stylesheets/application.css.scss */
+ul.menu {
+  padding-left: 10px;
+}
+/* line 74, ../../app/assets/stylesheets/application.css.scss */
+ul.menu li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px 13px;
+  border-right: 1px #262626 dotted;
+  border-left: 1px #262626 dotted;
+}
+/* line 81, ../../app/assets/stylesheets/application.css.scss */
+ul.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #262626;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* line 90, ../../app/assets/stylesheets/application.css.scss */
+.body {
+  width: 760px;
+  min-height: 300px;
+  margin: 0px auto;
+}
+
+/* line 96, ../../app/assets/stylesheets/application.css.scss */
+.footers {
+  width: 100%;
+  height: 125px;
+  background-color: #251A12;
+}
+/* line 100, ../../app/assets/stylesheets/application.css.scss */
+.footers #text {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 15px;
+}
+/* line 105, ../../app/assets/stylesheets/application.css.scss */
+.footers p#copyright {
+  color: white;
+  margin: 0px 0px;
+  display: inline;
+}
+/* line 110, ../../app/assets/stylesheets/application.css.scss */
+.footers p#link {
+  color: white;
+  padding: 0px 10px;
+  display: inline;
+}
+/* line 115, ../../app/assets/stylesheets/application.css.scss */
+.footers a#reference {
+  text-decoration: none;
+  color: yellow;
+  margin: 0px 0px;
+}

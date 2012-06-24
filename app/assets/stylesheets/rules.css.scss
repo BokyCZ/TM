@@ -1,0 +1,21 @@
+ul.rules {
+  padding-left: 20px;
+  li#dotted {
+    list-style-type: disc;
+    color: #C2C2C2;
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 1px;
+  }
+}
+
+ol.rules {
+  padding-left: 20px;
+  li#numerical {
+    list-style-type: decimal;
+    color: #C2C2C2;
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 1px
+  }
+}
