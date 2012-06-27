@@ -4,6 +4,8 @@
   <title>TM-Open</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= stylesheet_link_tag    "rules", :media => "all" %>
+  <%= stylesheet_link_tag    "registrations", :media => "all" %>
+  <%= stylesheet_link_tag    "qualifications", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -16,15 +18,16 @@
     <ul class="menu">
       <li><a href="/tm_open">TM Open</a></li>
       <li><a href="/rules">Pravidla</a></li>
-      <li><a href="/registration">Registrace</a></li>
-      <li><a href="/qualification">Kvalifikace</a></li>
-      <li><a href="/competition">Hlavní soutěž</a></li>
-      <li><a href="/discussion">Diskuse</a></li>
+      <li><a href="/registrations">Registrace</a></li>
+      <li><a href="/qualifications">Kvalifikace</a></li>
+      <li><a href="/competitions">Hlavní soutěž</a></li>
+      <li><a href="/discussions">Diskuse</a></li>
     </ul>
   </div>
 </div>
 
 <div class="body">
+  <p id="notice"><%= notice %></p><br>
   <%= yield %>
 </div>
 

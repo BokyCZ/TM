@@ -1,0 +1,20 @@
+/* line 1, ../../app/assets/stylesheets/qualifications.css.scss */
+table {
+  padding-bottom: 20px;
+}
+/* line 4, ../../app/assets/stylesheets/qualifications.css.scss */
+table tr th {
+  height: 25px;
+  width: 180px;
+  color: yellow;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* line 11, ../../app/assets/stylesheets/qualifications.css.scss */
+table tr td {
+  height: 25px;
+  width: 180px;
+  color: #C2C2C2;
+  font-size: 13px;
+  font-weight: bold;
+}

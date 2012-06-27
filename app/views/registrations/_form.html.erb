@@ -1,0 +1,34 @@
+<%= form_for @player, :url => { :action => "create", :controller => "registrations" } do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+        <% @player.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form">
+    <%= f.label :name, "Jméno manažera:" %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="form">
+    <%= f.label :team, "Název týmu:" %><br>
+    <%= f.text_field :team %>
+  </div>
+  <div class="form">
+    <%= f.label :sex, "Pohlaví:" %><br>
+    <%= f.select :sex, [["", nil],["Muž", "Muž"], ["Žena", "Žena"]] %>
+  </div>
+  <div class="form">
+    <%= f.label :age, "Věk:" %><br>
+    <%= f.number_field :age, :min => 6 %>
+  </div>
+  <div class="form">
+    <%= f.submit "REGISTROVAT" %>
+  </div>
+
+<% end %>

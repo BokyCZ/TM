@@ -2,13 +2,13 @@ TM::Application.routes.draw do
 
   root to: 'tm_open#index'
 
-  resource :tm_open do
-    get :index, to: 'tm_open#index'
-  end
+  resources :tm_open, only: [:index]
+  resources :rules, only: [:index]
+  resources :registrations
+  resources :qualifications, only: [:index, :show, :edit, :update]
 
-  resource :rules do
-    get :index, to: 'rules#index'
-  end
+  #, only: [:index, :show, :new, :create]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
