@@ -25,7 +25,7 @@
   </div>
   <div class="form">
     <%= f.label :age, "Věk:" %><br>
-    <%= f.number_field :age, :min => 6 %>
+    <%= f.number_field :age, :in => 6...100 %>
   </div>
   <div class="form">
     <%= f.submit "REGISTROVAT" %>

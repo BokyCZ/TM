@@ -4,7 +4,7 @@ p#show {
   font-weight: bold;
   display: inline;
 }
-table {
+table.registrations {
   padding-bottom: 20px;
   tr {
     th {
@@ -13,6 +13,7 @@ table {
       color: yellow;
       font-size: 15px;
       font-weight: bold;
+      text-align: center;
     }
     td {
       height: 25px;
@@ -20,6 +21,7 @@ table {
       color: #C2C2C2;
       font-size: 13px;
       font-weight: bold;
+      text-align: center;
     }
   }
 }

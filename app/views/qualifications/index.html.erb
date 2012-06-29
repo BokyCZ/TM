@@ -1,27 +1,27 @@
 <h1>Kvalifikace</h1>
 
-<table>
+<table class="qualifications">
   <tr>
-    <th>Jméno</th>
-    <th>Název týmu</th>
-    <th>1. týden</th>
-    <th>2. týden</th>
-    <th>3. týden</th>
-    <th>4. týden</th>
-    <th>Celkem bodů</th>
-    <th>Pořadí</th>
+    <th id="name">Jméno</th>
+    <th id="name">Název týmu</th>
+    <th id="week">1. týden</th>
+    <th id="week">2. týden</th>
+    <th id="week">3. týden</th>
+    <th id="week">4. týden</th>
+    <th id="total">Celkem bodů</th>
+    <th id="standings">Pořadí</th>
   </tr>
 
-  <% @player.each do |player| %>
+   <% @player.each do |player| %>
     <tr>
-      <td><%= player.name %></td>
-      <td><%= player.team %></td>
-      <td><%= player.qualification.first %></td>
-      <td><%= player.qualification.second %></td>
-      <td><%= player.qualification.third %></td>
-      <td><%= player.qualification.fourth %></td>
-      <td><%= player.qualification.total %></td>
-      <td><%= player.qualification.standings %></td>
+      <td id="name"><%= player.name %></td>
+      <td id="name"><%= player.team %></td>
+      <td id="week"><%= player.qualification.first %></td>
+      <td id="week"><%= player.qualification.second %></td>
+      <td id="week"><%= player.qualification.third %></td>
+      <td id="week"><%= player.qualification.fourth %></td>
+      <td id="total"><%= player.qualification.summary %></td>
+      <td id="standings"><%= player.qualification.sort_ranking %></td>
     </tr>
   <% end %>
 </table>

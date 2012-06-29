@@ -6,6 +6,7 @@ TM::Application.routes.draw do
   resources :rules, only: [:index]
   resources :registrations
   resources :qualifications, only: [:index, :show, :edit, :update]
+  resources :contacts, only: [:index]
 
   #, only: [:index, :show, :new, :create]
 

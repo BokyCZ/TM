@@ -1,0 +1,16 @@
+/* line 1, ../../app/assets/stylesheets/contact.css.scss */
+.contact {
+  padding-bottom: 20px;
+}
+
+/* line 5, ../../app/assets/stylesheets/contact.css.scss */
+p {
+  display: inline;
+}
+
+/* line 9, ../../app/assets/stylesheets/contact.css.scss */
+a.communication {
+  color: #C2C2C2;
+  font-size: 13px;
+  font-weight: bold;
+}

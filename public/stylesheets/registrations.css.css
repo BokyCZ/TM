@@ -7,27 +7,29 @@ p#show {
 }
 
 /* line 7, ../../app/assets/stylesheets/registrations.css.scss */
-table {
+table.registrations {
   padding-bottom: 20px;
 }
 /* line 10, ../../app/assets/stylesheets/registrations.css.scss */
-table tr th {
+table.registrations tr th {
   height: 25px;
   width: 180px;
   color: yellow;
   font-size: 15px;
   font-weight: bold;
+  text-align: center;
 }
-/* line 17, ../../app/assets/stylesheets/registrations.css.scss */
-table tr td {
+/* line 18, ../../app/assets/stylesheets/registrations.css.scss */
+table.registrations tr td {
   height: 25px;
   width: 180px;
   color: #C2C2C2;
   font-size: 13px;
   font-weight: bold;
+  text-align: center;
 }
 
-/* line 27, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 29, ../../app/assets/stylesheets/registrations.css.scss */
 .new {
   text-decoration: underline;
   color: yellow;
@@ -36,18 +38,18 @@ table tr td {
   padding-bottom: 20px;
 }
 
-/* line 35, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 37, ../../app/assets/stylesheets/registrations.css.scss */
 .form {
   padding-bottom: 20px;
 }
-/* line 37, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 39, ../../app/assets/stylesheets/registrations.css.scss */
 .form label {
   color: #C2C2C2;
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 44, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 46, ../../app/assets/stylesheets/registrations.css.scss */
 input#player_name {
   width: 150px;
   height: 17px;
@@ -55,7 +57,7 @@ input#player_name {
   margin-top: 3px;
 }
 
-/* line 50, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 52, ../../app/assets/stylesheets/registrations.css.scss */
 input#player_team {
   width: 150px;
   height: 17px;
@@ -63,7 +65,7 @@ input#player_team {
   margin-top: 3px;
 }
 
-/* line 56, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 58, ../../app/assets/stylesheets/registrations.css.scss */
 input#player_sex {
   width: 150px;
   height: 17px;
@@ -71,7 +73,7 @@ input#player_sex {
   margin-top: 3px;
 }
 
-/* line 62, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 64, ../../app/assets/stylesheets/registrations.css.scss */
 input#player_age {
   width: 150px;
   height: 17px;
@@ -79,7 +81,7 @@ input#player_age {
   margin-top: 3px;
 }
 
-/* line 69, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 71, ../../app/assets/stylesheets/registrations.css.scss */
 select#player_sex {
   width: 154px;
   height: 23px;
@@ -87,7 +89,7 @@ select#player_sex {
   margin-top: 3px;
 }
 
-/* line 76, ../../app/assets/stylesheets/registrations.css.scss */
+/* line 78, ../../app/assets/stylesheets/registrations.css.scss */
 input {
   width: 110px;
   height: 25px;
