@@ -6,6 +6,6 @@ class Player < ActiveRecord::Base
   validates :name, :presence => true, :uniqueness => true
   validates :team, :presence => true, :uniqueness => true
   validates :sex,  :presence => true
-  validates :age,  :presence => true
+  validates :age,  :presence => true, :numericality => {:only_integer => true, :greater_than => 5, :less_than => 100}
 
 end

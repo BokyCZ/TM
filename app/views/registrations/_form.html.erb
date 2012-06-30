@@ -1,8 +1,7 @@
 <%= form_for @player, :url => { :action => "create", :controller => "registrations" } do |f| %>
   <% if @player.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
-
+    <div class="error_message">
+      <h2>Při registraci se vyskytly tyto problémy:</h2>
       <ul>
         <% @player.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
@@ -12,20 +11,24 @@
   <% end %>
 
   <div class="form">
-    <%= f.label :name, "Jméno manažera:" %><br>
+    <%= f.label :name, "Jméno manažera:" %>
+    <div class="r"></div>
     <%= f.text_field :name %>
   </div>
   <div class="form">
-    <%= f.label :team, "Název týmu:" %><br>
+    <%= f.label :team, "Název týmu:" %>
+    <div class="r"></div>
     <%= f.text_field :team %>
   </div>
   <div class="form">
-    <%= f.label :sex, "Pohlaví:" %><br>
-    <%= f.select :sex, [["", nil],["Muž", "Muž"], ["Žena", "Žena"]] %>
+    <%= f.label :sex, "Pohlaví:" %>
+    <div class="r"></div>
+    <%= f.select :sex, [["Muž", "M"], ["Žena", "Z"]], :prompt => "" %>
   </div>
   <div class="form">
-    <%= f.label :age, "Věk:" %><br>
-    <%= f.number_field :age, :in => 6...100 %>
+    <%= f.label :age, "Věk:" %>
+    <div class="r"></div>
+    <%= f.text_field :age %>
   </div>
   <div class="form">
     <%= f.submit "REGISTROVAT" %>

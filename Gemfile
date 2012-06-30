@@ -7,6 +7,7 @@ gem 'active_link_to', '1.0.0'
 gem 'devise', '2.0.4'
 gem 'cancan', '1.6.7'
 gem 'dynamic_form', '1.1.4'
+#gem 'ruby-debug', '0.10.4'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

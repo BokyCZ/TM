@@ -13,15 +13,25 @@
   </tr>
 
    <% @player.each do |player| %>
+    <% player.qualification.sort_ranking %>
+   <% end %>
+
+   <% @player = Player.all %>
+
+   <% @player.each do |player| %>
+    <% color = 1
+       if player.qualification.standings > 64
+         color = 2
+       end %>
     <tr>
-      <td id="name"><%= player.name %></td>
-      <td id="name"><%= player.team %></td>
-      <td id="week"><%= player.qualification.first %></td>
-      <td id="week"><%= player.qualification.second %></td>
-      <td id="week"><%= player.qualification.third %></td>
-      <td id="week"><%= player.qualification.fourth %></td>
-      <td id="total"><%= player.qualification.summary %></td>
-      <td id="standings"><%= player.qualification.sort_ranking %></td>
+      <td id="name<%= color %>"><%= player.name %></td>
+      <td id="name<%= color %>"><%= player.team %></td>
+      <td id="week<%= color %>"><%= player.qualification.first %></td>
+      <td id="week<%= color %>"><%= player.qualification.second %></td>
+      <td id="week<%= color %>"><%= player.qualification.third %></td>
+      <td id="week<%= color %>"><%= player.qualification.fourth %></td>
+      <td id="week<%= color %>"><%= player.qualification.summary %></td>
+      <td id="standings<%= color %>"><%= player.qualification.standings %></td>
     </tr>
   <% end %>
 </table>

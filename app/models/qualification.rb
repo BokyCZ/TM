@@ -12,14 +12,21 @@ class Qualification < ActiveRecord::Base
   def sort_ranking
     @sort = Player.all
     ranking = 0
+    n = 0
     @sort.each do |sort|
       if player.qualification.total <= sort.qualification.total
         ranking = ranking + 1
       end
+      if player.qualification.total == sort.qualification.total
+        n = n + 1
+      end
     end
-    player.qualification.standings = ranking
+    if n == 0
+      player.qualification.standings = ranking
+    else
+      player.qualification.standings = ranking - (n - 1)
+    end
     player.qualification.save
-    return player.qualification.standings
   end
 
 end

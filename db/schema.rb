@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20120626222645) do
     t.integer  "second",     :default => 0, :null => false
     t.integer  "third",      :default => 0, :null => false
     t.integer  "fourth",     :default => 0, :null => false
-    t.integer  "total",      :default => 1, :null => false
+    t.integer  "total",      :default => 0, :null => false
     t.integer  "standings",  :default => 1, :null => false
     t.integer  "player_id",                 :null => false
     t.datetime "created_at",                :null => false

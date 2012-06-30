@@ -19,7 +19,7 @@ class RegistrationsController < ApplicationController
     if @player.save
       redirect_to registration_path(@player), notice: 'Registrace probehla v poradku'
     else
-      redirect_to new_registration_path, notice: 'Registrace byla neuspesna, opakujte vasi zadost'
+      render action: "new"
     end
   end
 

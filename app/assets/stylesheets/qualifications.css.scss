@@ -18,26 +18,42 @@ table.qualifications {
     th#week {
       width: 70px;
     }
-    td#week {
+    td#week1 {
       width: 70px;
+    }
+    td#week2 {
+      width: 70px;
+      color: red;
     }
     th#name {
       width: 140px;
     }
-    td#name {
+    td#name1 {
       width: 140px;
+    }
+    td#name2 {
+      width: 140px;
+      color: red;
     }
     th#total {
       width: 110px;
     }
-    td#total {
+    td#total1 {
       width: 110px;
+    }
+    td#total2 {
+      width: 110px;
+      color: red;
     }
     th#standings {
       width: 60px;
     }
-    td#standings {
-      width: 60px;
+    td#standings1 {
+      width: 110px;
+    }
+    td#standings2 {
+      width: 110px;
+      color: red;
     }
   }
 }
