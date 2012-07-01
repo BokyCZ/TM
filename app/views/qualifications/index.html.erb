@@ -13,6 +13,7 @@
   </tr>
 
    <% @player.each do |player| %>
+    <% player.qualification.summary %>
     <% player.qualification.sort_ranking %>
    <% end %>
 
@@ -30,7 +31,7 @@
       <td id="week<%= color %>"><%= player.qualification.second %></td>
       <td id="week<%= color %>"><%= player.qualification.third %></td>
       <td id="week<%= color %>"><%= player.qualification.fourth %></td>
-      <td id="week<%= color %>"><%= player.qualification.summary %></td>
+      <td id="week<%= color %>"><%= player.qualification.total %></td>
       <td id="standings<%= color %>"><%= player.qualification.standings %></td>
     </tr>
   <% end %>

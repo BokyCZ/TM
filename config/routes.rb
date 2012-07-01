@@ -7,6 +7,8 @@ TM::Application.routes.draw do
   resources :registrations
   resources :qualifications, only: [:index, :show, :edit, :update]
   resources :contacts, only: [:index]
+  resources :competitions, only: [:index, :edit]
+  resources :help, only: [:index]
 
   #, only: [:index, :show, :new, :create]
 

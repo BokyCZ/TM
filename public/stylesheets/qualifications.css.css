@@ -63,10 +63,10 @@ table.qualifications tr th#standings {
 }
 /* line 51, ../../app/assets/stylesheets/qualifications.css.scss */
 table.qualifications tr td#standings1 {
-  width: 110px;
+  width: 60px;
 }
 /* line 54, ../../app/assets/stylesheets/qualifications.css.scss */
 table.qualifications tr td#standings2 {
-  width: 110px;
+  width: 60px;
   color: red;
 }
