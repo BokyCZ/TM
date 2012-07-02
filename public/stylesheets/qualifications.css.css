@@ -19,54 +19,54 @@ table.qualifications tr td {
   height: 25px;
 }
 /* line 18, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr th#week {
+table.qualifications tr th.week {
   width: 70px;
 }
 /* line 21, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr td#week1 {
+table.qualifications tr td.week1 {
   width: 70px;
 }
 /* line 24, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr td#week2 {
+table.qualifications tr td.week2 {
   width: 70px;
   color: red;
 }
 /* line 28, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr th#name {
+table.qualifications tr th.name {
   width: 140px;
 }
 /* line 31, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr td#name1 {
+table.qualifications tr td.name1 {
   width: 140px;
 }
 /* line 34, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr td#name2 {
+table.qualifications tr td.name2 {
   width: 140px;
   color: red;
 }
 /* line 38, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr th#total {
+table.qualifications tr th.total {
   width: 110px;
 }
 /* line 41, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr td#total1 {
+table.qualifications tr td.total1 {
   width: 110px;
 }
 /* line 44, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr td#total2 {
+table.qualifications tr td.total2 {
   width: 110px;
   color: red;
 }
 /* line 48, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr th#standings {
+table.qualifications tr th.standings {
   width: 60px;
 }
 /* line 51, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr td#standings1 {
+table.qualifications tr td.standings1 {
   width: 60px;
 }
 /* line 54, ../../app/assets/stylesheets/qualifications.css.scss */
-table.qualifications tr td#standings2 {
+table.qualifications tr td.standings2 {
   width: 60px;
   color: red;
 }

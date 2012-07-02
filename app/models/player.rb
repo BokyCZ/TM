@@ -9,4 +9,6 @@ class Player < ActiveRecord::Base
   validates :sex,  :presence => true
   validates :age,  :presence => true, :numericality => {:only_integer => true, :greater_than => 5, :less_than => 100}
 
+  scope :ordered_by_name, order("name")
+
 end

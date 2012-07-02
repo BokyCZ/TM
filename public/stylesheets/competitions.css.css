@@ -40,7 +40,7 @@ table.competition {
   padding-bottom: 20px;
 }
 /* line 43, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td#typ11 {
+table.competition tr td.typ11 {
   height: 15px;
   width: 125px;
   color: red;
@@ -50,7 +50,7 @@ table.competition tr td#typ11 {
   padding-bottom: 0px;
 }
 /* line 52, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td#typ10 {
+table.competition tr td.typ10 {
   height: 15px;
   width: 125px;
   color: #C2C2C2;
@@ -60,7 +60,7 @@ table.competition tr td#typ10 {
   padding-bottom: 0px;
 }
 /* line 61, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td#typ00 {
+table.competition tr td.typ00 {
   height: 15px;
   width: 125px;
   color: #C2C2C2;
@@ -70,7 +70,7 @@ table.competition tr td#typ00 {
   padding-bottom: 20px;
 }
 /* line 70, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td#typ01 {
+table.competition tr td.typ01 {
   height: 15px;
   width: 125px;
   color: red;
@@ -80,7 +80,7 @@ table.competition tr td#typ01 {
   padding-bottom: 20px;
 }
 /* line 79, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td#points11 {
+table.competition tr td.points11 {
   height: 15px;
   width: 125px;
   color: red;
@@ -90,7 +90,7 @@ table.competition tr td#points11 {
   padding-bottom: 0px;
 }
 /* line 88, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td#points10 {
+table.competition tr td.points10 {
   height: 15px;
   width: 125px;
   color: #C2C2C2;
@@ -100,7 +100,7 @@ table.competition tr td#points10 {
   padding-bottom: 0px;
 }
 /* line 97, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td#points00 {
+table.competition tr td.points00 {
   height: 15px;
   width: 125px;
   color: #C2C2C2;
@@ -110,7 +110,7 @@ table.competition tr td#points00 {
   padding-bottom: 20px;
 }
 /* line 106, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td#points01 {
+table.competition tr td.points01 {
   height: 15px;
   width: 125px;
   color: red;

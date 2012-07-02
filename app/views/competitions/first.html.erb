@@ -15,29 +15,17 @@
 
 <table class="competition">
   <% for n in 1..32 %>
-    <% competition1 = Competition.find_by_draw((2*n) - 1) %>
-    <% competition2 = Competition.find_by_draw(2*n) %>
-    <% win1 = 0 %>
-    <% win2 = 0 %>
-    <% if competition1.first_round.to_s.to_i == competition2.first_round.to_s.to_i
-      else
-        if competition1.first_round.to_s.to_i > competition2.first_round.to_s.to_i
-          win2 = 1
-        else
-          if competition1.first_round.to_s.to_i < competition2.first_round.to_s.to_i
-            win1 = 1
-          end
-        end
-      end %>
+    <% draw1 = Competition.find_by_draw((2*n) - 1) %>
+    <% draw2 = Competition.find_by_draw(2*n) %>
     <tr>
-      <td id="typ1<%= win1 %>"><%= competition1.player.name %></td>
-      <td id="typ1<%= win1 %>">( <%= competition1.player.team %> )</td>
-      <td id="points1<%= win1 %>"><%= competition1.first_round %></td>
+      <td class="typ1<%= colorCompetitionClass(draw1, draw2) %>"><%= draw1.player.name %></td>
+      <td class="typ1<%= colorCompetitionClass(draw1, draw2) %>">( <%= draw1.player.team %> )</td>
+      <td class="points1<%= colorCompetitionClass(draw1, draw2) %>"><%= draw1.first_round %></td>
     </tr>
     <tr>
-      <td id="typ0<%= win2 %>"><%= competition2.player.name %></td>
-      <td id="typ0<%= win2 %>">( <%= competition2.player.team %> )</td>
-      <td id="points0<%= win2 %>"><%= competition2.first_round %></td>
+      <td class="typ0<%= colorCompetitionClass(draw2, draw1) %>"><%= draw2.player.name %></td>
+      <td class="typ0<%= colorCompetitionClass(draw2, draw1) %>">( <%= draw2.player.team %> )</td>
+      <td class="points0<%= colorCompetitionClass(draw2, draw1) %>"><%= draw2.first_round %></td>
     </tr>
   <% end %>
 </table>

@@ -40,7 +40,7 @@
 table.competition {
   padding-bottom: 20px;
   tr {
-    td#typ11 {
+    td.typ11 {
       height: 15px;
       width: 125px;
       color: red;
@@ -49,7 +49,7 @@ table.competition {
       text-align: left;
       padding-bottom: 0px;
     }
-    td#typ10 {
+    td.typ10 {
       height: 15px;
       width: 125px;
       color: #C2C2C2;
@@ -58,7 +58,7 @@ table.competition {
       text-align: left;
       padding-bottom: 0px;
     }
-    td#typ00 {
+    td.typ00 {
       height: 15px;
       width: 125px;
       color: #C2C2C2;
@@ -67,7 +67,7 @@ table.competition {
       text-align: left;
       padding-bottom: 20px;
     }
-    td#typ01 {
+    td.typ01 {
       height: 15px;
       width: 125px;
       color: red;
@@ -76,7 +76,7 @@ table.competition {
       text-align: left;
       padding-bottom: 20px;
     }
-    td#points11 {
+    td.points11 {
       height: 15px;
       width: 125px;
       color: red;
@@ -85,7 +85,7 @@ table.competition {
       text-align: center;
       padding-bottom: 0px;
     }
-    td#points10 {
+    td.points10 {
       height: 15px;
       width: 125px;
       color: #C2C2C2;
@@ -94,7 +94,7 @@ table.competition {
       text-align: center;
       padding-bottom: 0px;
     }
-    td#points00 {
+    td.points00 {
       height: 15px;
       width: 125px;
       color: #C2C2C2;
@@ -103,7 +103,7 @@ table.competition {
       text-align: center;
       padding-bottom: 20px;
     }
-    td#points01 {
+    td.points01 {
       height: 15px;
       width: 125px;
       color: red;

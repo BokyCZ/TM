@@ -1,7 +1,7 @@
 class QualificationsController < ApplicationController
 
   def index
-    @player = Player.all
+    @qualifications = Qualification.ordered_by_standings
   end
 
   def show

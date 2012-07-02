@@ -8,15 +8,14 @@ TM::Application.routes.draw do
   resources :qualifications
   resources :contacts, only: [:index]
   resources :help, only: [:index]
-  resources :competitions, only: [:index]
-
-  match 'competitions/first' => 'competitions#first'
-  match 'competitions/second' => 'competitions#second'
-  match 'competitions/third' => 'competitions#third'
-  match 'competitions/quarterfinal' => 'competitions#quarterfinal'
-  match 'competitions/semifinal' => 'competitions#semifinal'
-  match 'competitions/final' => 'competitions#final'
-
+  resources :competitions, only: [:index] do
+    get :first, on: :collection
+    get :second, on: :collection
+    get :third, on: :collection
+    get :quarterfinal, on: :collection
+    get :semifinal, on: :collection
+    get :final, on: :collection
+  end
 
   #, only: [:index, :show, :new, :create]
 

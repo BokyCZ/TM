@@ -1,7 +1,7 @@
 class RegistrationsController < ApplicationController
 
   def index
-    @player = Player.all
+    @player = Player.ordered_by_name
   end
 
   def show

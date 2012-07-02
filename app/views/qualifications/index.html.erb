@@ -2,40 +2,27 @@
 
 <table class="qualifications">
   <tr>
-    <th id="name">Jméno</th>
-    <th id="name">Název týmu</th>
-    <th id="week">1. týden</th>
-    <th id="week">2. týden</th>
-    <th id="week">3. týden</th>
-    <th id="week">4. týden</th>
-    <th id="total">Celkem bodů</th>
-    <th id="standings">Pořadí</th>
+    <th class="name">Jméno</th>
+    <th class="name">Název týmu</th>
+    <th class="week">1. týden</th>
+    <th class="week">2. týden</th>
+    <th class="week">3. týden</th>
+    <th class="week">4. týden</th>
+    <th class="total">Celkem bodů</th>
+    <th class="standings">Pořadí</th>
   </tr>
 
-  <% @player.each do |player| %>
-    <% player.qualification.summary %>
-  <% end %>
-
-  <% @player.each do |player| %>
-    <% player.qualification.sort_ranking %>
-   <% end %>
-
-   <% @player = Player.all %>
-
-   <% @player.each do |player| %>
-    <% color = 1
-       if player.qualification.standings > 64
-         color = 2
-       end %>
+   <% @qualifications.each do |qualification| %>
+    <% qualification1 = qualification.total %>
     <tr>
-      <td id="name<%= color %>"><%= player.name %></td>
-      <td id="name<%= color %>"><%= player.team %></td>
-      <td id="week<%= color %>"><%= player.qualification.first %></td>
-      <td id="week<%= color %>"><%= player.qualification.second %></td>
-      <td id="week<%= color %>"><%= player.qualification.third %></td>
-      <td id="week<%= color %>"><%= player.qualification.fourth %></td>
-      <td id="week<%= color %>"><%= player.qualification.total %></td>
-      <td id="standings<%= color %>"><%= player.qualification.standings %></td>
+      <td class="name<%= colorQualificationClass(qualification1) %>"><%= qualification.player.name %></td>
+      <td class="name<%= colorQualificationClass(qualification1) %>"><%= qualification.player.team %></td>
+      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.first %></td>
+      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.second %></td>
+      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.third %></td>
+      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.fourth %></td>
+      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.total %></td>
+      <td class="standings<%= colorQualificationClass(qualification1) %>"><%= qualification.standings %></td>
     </tr>
   <% end %>
 </table>
