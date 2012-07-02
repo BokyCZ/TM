@@ -1,10 +1,10 @@
+@n = 0
 80.times do
-  n = 0
   a = 0
   o =  [('a'..'z'),('A'..'Z'),('0'..'1')].map{|i| i.to_a}.flatten
-  name  =  (0..10).map{ o[rand(o.length)]  }.join
+  name  =  (1..10).map{ o[rand(o.length)]  }.join
   o =  [('a'..'z'),('A'..'Z'),('0'..'1')].map{|i| i.to_a}.flatten
-  team =  (0..10).map{ o[rand(o.length)]  }.join
+  team =  (1..10).map{ o[rand(o.length)]  }.join
   pole = ['M', 'Z']
   index = (rand() * 2).to_i
   sex = pole[index]
@@ -25,7 +25,7 @@
   end
 
   if a == 1 and b == 1
-    @n = n + 1
+    @n = @n + 1
   end
 
 end

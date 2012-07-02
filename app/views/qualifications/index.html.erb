@@ -12,8 +12,11 @@
     <th id="standings">Pořadí</th>
   </tr>
 
-   <% @player.each do |player| %>
+  <% @player.each do |player| %>
     <% player.qualification.summary %>
+  <% end %>
+
+  <% @player.each do |player| %>
     <% player.qualification.sort_ranking %>
    <% end %>
 

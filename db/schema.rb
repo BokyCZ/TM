@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20120701094744) do
     t.integer  "quarterfinal_round", :default => 0, :null => false
     t.integer  "semifinal_round",    :default => 0, :null => false
     t.integer  "final_round",        :default => 0, :null => false
+    t.integer  "draw",               :default => 0, :null => false
     t.integer  "player_id",                         :null => false
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false

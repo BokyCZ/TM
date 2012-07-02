@@ -6,7 +6,6 @@ class Qualification < ActiveRecord::Base
   def summary
     player.qualification.total = player.qualification.first + player.qualification.second + player.qualification.third + player.qualification.fourth
     player.qualification.save
-    return player.qualification.total
   end
 
   def sort_ranking

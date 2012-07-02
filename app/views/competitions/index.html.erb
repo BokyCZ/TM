@@ -1,2 +1,29 @@
 <h1>Hlavní soutěž</h1>
-<p>Find me in app/views/competitions/index.html.erb</p>
+
+<p>Pokračujte výběrem z nabídky</p>
+
+<div class="index">
+  <table>
+    <tr>
+      <td><a href="/competitions/first">První kolo</a></td>
+      <td><a href="/competitions/second">Druhé kolo</a></td>
+      <td><a href="/competitions/third">Osmifinále</a></td>
+      <td><a href="/competitions/quarterfinal">Čtvrtfinále</a></td>
+      <td><a href="/competitions/semifinal">Semifinále</a></td>
+      <td><a href="/competitions/final">Finále</a></td>
+    </tr>
+  </table>
+</div>
+
+<% # no =  [1..64].map{|i| i.to_a}.flatten %>
+<% # @player = Player.all %>
+<% # @player.each do |player| %>
+  <% # if player.qualification.standings < 65
+       # index  = (1..1).map{ no[rand(no.length)] }.join
+       # index = index.to_i
+       # player.competition = Competition.new(:draw => index)
+       # pole = [index]
+       # no = no - pole
+  # end %>
+<% # end %>
+

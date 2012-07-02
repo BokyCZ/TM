@@ -5,10 +5,18 @@ TM::Application.routes.draw do
   resources :tm_open, only: [:index]
   resources :rules, only: [:index]
   resources :registrations
-  resources :qualifications, only: [:index, :show, :edit, :update]
+  resources :qualifications
   resources :contacts, only: [:index]
-  resources :competitions, only: [:index, :edit]
   resources :help, only: [:index]
+  resources :competitions, only: [:index]
+
+  match 'competitions/first' => 'competitions#first'
+  match 'competitions/second' => 'competitions#second'
+  match 'competitions/third' => 'competitions#third'
+  match 'competitions/quarterfinal' => 'competitions#quarterfinal'
+  match 'competitions/semifinal' => 'competitions#semifinal'
+  match 'competitions/final' => 'competitions#final'
+
 
   #, only: [:index, :show, :new, :create]
 
