@@ -1,4 +1,4 @@
-p#show {
+p.show {
   color: #C2C2C2;
   font-size: 13px;
   font-weight: bold;
@@ -34,8 +34,13 @@ table.registrations {
   padding-bottom: 20px;
 }
 
+.body_form {
+  width: 345px;
+}
+
 .form {
   padding-bottom: 20px;
+  padding-left: 95px;
   label {
     color: #C2C2C2;
     font-size: 14px;

@@ -6,6 +6,14 @@ cs:
         team: "Název týmu"
         sex: "Pohlaví"
         age: "Věk"
+    errors:
+      models:
+        player:
+          attributes:
+            team:
+              error: "není registrovaný na TM"
+            name:
+              error: "není rehistrováno na TM"
   date:
     abbr_day_names:
     - Ne

@@ -10,28 +10,30 @@
     </div>
   <% end %>
 
-  <div class="form">
-    <%= f.label :name, "Jméno manažera:" %>
-    <div class="r"></div>
-    <%= f.text_field :name %>
-  </div>
-  <div class="form">
-    <%= f.label :team, "Název týmu:" %>
-    <div class="r"></div>
-    <%= f.text_field :team %>
-  </div>
-  <div class="form">
-    <%= f.label :sex, "Pohlaví:" %>
-    <div class="r"></div>
-    <%= f.select :sex, [["Muž", "M"], ["Žena", "Z"]], :prompt => "" %>
-  </div>
-  <div class="form">
-    <%= f.label :age, "Věk:" %>
-    <div class="r"></div>
-    <%= f.text_field :age %>
-  </div>
-  <div class="form">
-    <%= f.submit "REGISTROVAT" %>
+  <div class="body_form">
+    <div class="form">
+      <%= f.label :name, "Jméno manažera:" %>
+      <div class="r"></div>
+      <%= f.text_field :name %>
+    </div>
+    <div class="form">
+      <%= f.label :team, "Název týmu:" %>
+      <div class="r"></div>
+      <%= f.text_field :team %>
+    </div>
+    <div class="form">
+      <%= f.label :sex, "Pohlaví:" %>
+      <div class="r"></div>
+      <%= f.select :sex, [["Muž", "M"], ["Žena", "Z"]], :prompt => "" %>
+    </div>
+    <div class="form">
+      <%= f.label :age, "Věk:" %>
+      <div class="r"></div>
+      <%= f.text_field :age %>
+    </div>
+    <div class="form">
+      <%= f.submit "REGISTROVAT" %>
+    </div>
   </div>
 
 <% end %>
