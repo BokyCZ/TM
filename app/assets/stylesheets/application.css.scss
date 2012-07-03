@@ -57,7 +57,7 @@ a {
     position: absolute;
     margin-top: 15px;
   }
-  p#text {
+  p.text {
     margin: 0px 0px;
     color: blue;
     font-size: 60px;
@@ -108,22 +108,22 @@ ul.menu {
   width: 100%;
   height: 125px;
   background-color: #251A12;
-  #text {
+  .text {
     font-size: 12px;
     text-align: center;
     padding-top: 15px;
   }
-  p#copyright {
+  p.copyright {
     color: white;
     margin: 0px 0px;
     display: inline;
   }
-  p#link {
+  p.link {
     color: white;
     padding: 0px 10px;
     display: inline;
   }
-  a#reference {
+  a.reference {
     text-decoration: none;
     color: yellow;
     margin: 0px 0px;

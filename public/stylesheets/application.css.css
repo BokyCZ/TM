@@ -73,7 +73,7 @@ a {
   margin-top: 15px;
 }
 /* line 60, ../../app/assets/stylesheets/application.css.scss */
-.logo p#text {
+.logo p.text {
   margin: 0px 0px;
   color: blue;
   font-size: 60px;
@@ -133,25 +133,25 @@ ul.menu a {
   background-color: #251A12;
 }
 /* line 111, ../../app/assets/stylesheets/application.css.scss */
-.footers #text {
+.footers .text {
   font-size: 12px;
   text-align: center;
   padding-top: 15px;
 }
 /* line 116, ../../app/assets/stylesheets/application.css.scss */
-.footers p#copyright {
+.footers p.copyright {
   color: white;
   margin: 0px 0px;
   display: inline;
 }
 /* line 121, ../../app/assets/stylesheets/application.css.scss */
-.footers p#link {
+.footers p.link {
   color: white;
   padding: 0px 10px;
   display: inline;
 }
 /* line 126, ../../app/assets/stylesheets/application.css.scss */
-.footers a#reference {
+.footers a.reference {
   text-decoration: none;
   color: yellow;
   margin: 0px 0px;

@@ -39,83 +39,80 @@
 table.competition {
   padding-bottom: 20px;
 }
-/* line 43, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td.typ11 {
-  height: 15px;
-  width: 125px;
+/* line 42, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div10 {
   color: red;
   font-size: 13px;
   font-weight: bold;
-  text-align: left;
   padding-bottom: 0px;
+}
+/* line 47, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div10 td.typ {
+  height: 15px;
+  width: 125px;
+  text-align: left;
 }
 /* line 52, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td.typ10 {
+table.competition tr.div10 td.points {
   height: 15px;
   width: 125px;
+  text-align: center;
+}
+/* line 58, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div11 {
   color: #C2C2C2;
   font-size: 13px;
   font-weight: bold;
-  text-align: left;
-  padding-bottom: 0px;
 }
-/* line 61, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td.typ00 {
+/* line 62, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div11 td.typ {
   height: 15px;
   width: 125px;
-  color: #C2C2C2;
-  font-size: 13px;
-  font-weight: bold;
   text-align: left;
-  padding-bottom: 20px;
 }
-/* line 70, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td.typ01 {
+/* line 67, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div11 td.points {
   height: 15px;
   width: 125px;
+  text-align: center;
+}
+/* line 73, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div20 {
   color: red;
   font-size: 13px;
   font-weight: bold;
+}
+/* line 77, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div20 td.typ {
+  height: 15px;
+  width: 125px;
   text-align: left;
   padding-bottom: 20px;
 }
-/* line 79, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td.points11 {
+/* line 83, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div20 td.points {
   height: 15px;
   width: 125px;
-  color: red;
-  font-size: 13px;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 0px;
-}
-/* line 88, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td.points10 {
-  height: 15px;
-  width: 125px;
-  color: #C2C2C2;
-  font-size: 13px;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 0px;
-}
-/* line 97, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td.points00 {
-  height: 15px;
-  width: 125px;
-  color: #C2C2C2;
-  font-size: 13px;
-  font-weight: bold;
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 106, ../../app/assets/stylesheets/competitions.css.scss */
-table.competition tr td.points01 {
-  height: 15px;
-  width: 125px;
-  color: red;
+/* line 90, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div21 {
+  color: #C2C2C2;
   font-size: 13px;
   font-weight: bold;
+}
+/* line 94, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div21 td.typ {
+  height: 15px;
+  width: 125px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+/* line 100, ../../app/assets/stylesheets/competitions.css.scss */
+table.competition tr.div21 td.points {
+  height: 15px;
+  width: 125px;
   text-align: center;
   padding-bottom: 20px;
 }

@@ -1,6 +1,6 @@
 table.qualifications {
   padding-bottom: 20px;
-  tr {
+  tr.div_q {
     th {
       color: yellow;
       font-size: 15px;
@@ -8,6 +8,20 @@ table.qualifications {
       text-align: center;
       height: 25px;
     }
+    th.week {
+      width: 70px;
+    }
+    th.name {
+      width: 140px;
+    }
+    th.total {
+      width: 110px;
+    }
+    th.standings {
+      width: 60px;
+    }
+  }
+  tr.div_q0 {
     td {
       color: #C2C2C2;
       font-size: 13px;
@@ -15,45 +29,43 @@ table.qualifications {
       text-align: center;
       height: 25px;
     }
-    th.week {
+    td.week {
       width: 70px;
     }
-    td.week1 {
-      width: 70px;
-    }
-    td.week2 {
-      width: 70px;
-      color: red;
-    }
-    th.name {
+    td.name {
       width: 140px;
     }
-    td.name1 {
-      width: 140px;
-    }
-    td.name2 {
-      width: 140px;
-      color: red;
-    }
-    th.total {
+    td.total {
       width: 110px;
-    }
-    td.total1 {
-      width: 110px;
-    }
-    td.total2 {
-      width: 110px;
-      color: red;
-    }
-    th.standings {
-      width: 60px;
     }
     td.standings1 {
       width: 60px;
     }
-    td.standings2 {
-      width: 60px;
+  }
+  tr.div_q1 {
+    td {
       color: red;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+      height: 25px;
+    }
+    td.week {
+      width: 70px;
+    }
+    td.name {
+      width: 140px;
+    }
+    td.total {
+      width: 110px;
+    }
+    td.standings1 {
+      width: 60px;
     }
   }
 }
+
+
+
+
+

@@ -1,6 +1,6 @@
 ul.rules {
   padding-left: 20px;
-  li#dotted {
+  li.dotted {
     list-style-type: disc;
     color: #C2C2C2;
     font-size: 13px;
@@ -11,7 +11,7 @@ ul.rules {
 
 ol.rules {
   padding-left: 20px;
-  li#numerical {
+  li.numerical {
     list-style-type: decimal;
     color: #C2C2C2;
     font-size: 13px;

@@ -1,7 +1,7 @@
 <h1>Kvalifikace</h1>
 
 <table class="qualifications">
-  <tr>
+  <tr class="div_q">
     <th class="name">Jméno</th>
     <th class="name">Název týmu</th>
     <th class="week">1. týden</th>
@@ -14,15 +14,15 @@
 
    <% @qualifications.each do |qualification| %>
     <% qualification1 = qualification.total %>
-    <tr>
-      <td class="name<%= colorQualificationClass(qualification1) %>"><%= qualification.player.name %></td>
-      <td class="name<%= colorQualificationClass(qualification1) %>"><%= qualification.player.team %></td>
-      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.first %></td>
-      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.second %></td>
-      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.third %></td>
-      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.fourth %></td>
-      <td class="week<%= colorQualificationClass(qualification1) %>"><%= qualification.total %></td>
-      <td class="standings<%= colorQualificationClass(qualification1) %>"><%= qualification.standings %></td>
+    <tr class="div_q<%= colorQualificationClass(qualification1) %>">
+      <td class="name"><%= qualification.player.name %></td>
+      <td class="name"><%= qualification.player.team %></td>
+      <td class="week"><%= qualification.first %></td>
+      <td class="week"><%= qualification.second %></td>
+      <td class="week"><%= qualification.third %></td>
+      <td class="week"><%= qualification.fourth %></td>
+      <td class="week"><%= qualification.total %></td>
+      <td class="standings"><%= qualification.standings %></td>
     </tr>
   <% end %>
 </table>
