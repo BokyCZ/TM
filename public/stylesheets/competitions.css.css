@@ -60,13 +60,13 @@ table.competition tr.div10 {
 /* line 56, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div10 td.typ {
   height: 15px;
-  width: 125px;
+  width: 150px;
   text-align: left;
 }
 /* line 61, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div10 td.points {
   height: 15px;
-  width: 125px;
+  width: 50px;
   text-align: center;
 }
 /* line 67, ../../app/assets/stylesheets/competitions.css.scss */
@@ -78,13 +78,13 @@ table.competition tr.div11 {
 /* line 71, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div11 td.typ {
   height: 15px;
-  width: 125px;
+  width: 150px;
   text-align: left;
 }
 /* line 76, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div11 td.points {
   height: 15px;
-  width: 125px;
+  width: 50px;
   text-align: center;
 }
 /* line 82, ../../app/assets/stylesheets/competitions.css.scss */
@@ -96,14 +96,14 @@ table.competition tr.div20 {
 /* line 86, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div20 td.typ {
   height: 15px;
-  width: 125px;
+  width: 150px;
   text-align: left;
   padding-bottom: 20px;
 }
 /* line 92, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div20 td.points {
   height: 15px;
-  width: 125px;
+  width: 50px;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -116,14 +116,14 @@ table.competition tr.div21 {
 /* line 103, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div21 td.typ {
   height: 15px;
-  width: 125px;
+  width: 150px;
   text-align: left;
   padding-bottom: 20px;
 }
 /* line 109, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div21 td.points {
   height: 15px;
-  width: 125px;
+  width: 50px;
   text-align: center;
   padding-bottom: 20px;
 }

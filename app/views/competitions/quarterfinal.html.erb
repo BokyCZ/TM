@@ -20,16 +20,18 @@
       <% draw1 = @competitions[(2*n) - 2] %>
       <% draw2 = @competitions[(2*n) - 1] %>
       <tr class="div<%= index = padding(index) %><%= color_and_comparison_quarterfinal(draw1, draw2) %>">
-        <td class="typ"><%= draw1.draw %></td>
+        <td class="points"><%= draw1.draw %></td>
         <td class="typ"><%= draw1.player.name %></td>
         <td class="typ">( <%= draw1.player.team %> )</td>
         <td class="points"><%= draw1.second_round %></td>
+        <td class="points"><%= draw1.player.qualification.standings %></td>
       </tr>
       <tr class="div<%= index = padding(index) %><%= color_and_comparison_quarterfinal(draw2, draw1) %>">
-        <td class="typ"><%= draw2.draw %></td>
+        <td class="points"><%= draw2.draw %></td>
         <td class="typ"><%= draw2.player.name %></td>
         <td class="typ">( <%= draw2.player.team %> )</td>
         <td class="points"><%= draw2.second_round %></td>
+        <td class="points"><%= draw2.player.qualification.standings %></td>
       </tr>
     <% end %>
   </table>
