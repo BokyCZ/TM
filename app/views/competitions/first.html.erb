@@ -11,28 +11,30 @@
   </table>
 </div>
 
-<h1>První kolo</h1>
+<h1 class="competition">První kolo</h1>
 
-<table class="competition">
-  <% index = 0 %>
-  <% for n in 1..32 %>
-    <% draw1 = @competitions[(2*n) - 2] %>
-    <% draw2 = @competitions[(2*n) - 1] %>
-    <% #draw1.second_round = first_to_second_round1(draw1, draw2) %>
-    <% #draw2.second_round = first_to_second_round2(draw2, draw1) %>
-    <% #draw1.save %>
-    <% #draw2.save %>
-    <tr class="div<%= index = padding(index) %><%= color_and_comparison_first(draw1, draw2) %>">
-      <td class="typ"><%= draw1.draw %></td>
-      <td class="typ"><%= draw1.player.name %></td>
-      <td class="typ">( <%= draw1.player.team %> )</td>
-      <td class="points"><%= draw1.first_round %></td>
-    </tr>
-    <tr class="div<%= index = padding(index) %><%= color_and_comparison_first(draw2, draw1) %>">
-      <td class="typ"><%= draw2.draw %></td>
-      <td class="typ"><%= draw2.player.name %></td>
-      <td class="typ">( <%= draw2.player.team %> )</td>
-      <td class="points"><%= draw2.first_round %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="div_competition">
+  <table class="competition">
+    <% index = 0 %>
+    <% for n in 1..32 %>
+      <% draw1 = @competitions[(2*n) - 2] %>
+      <% draw2 = @competitions[(2*n) - 1] %>
+      <% #draw1.second_round = first_to_second_round1(draw1, draw2) %>
+      <% #draw2.second_round = first_to_second_round2(draw2, draw1) %>
+      <% #draw1.save %>
+      <% #draw2.save %>
+      <tr class="div<%= index = padding(index) %><%= color_and_comparison_first(draw1, draw2) %>">
+        <td class="typ"><%= draw1.draw %></td>
+        <td class="typ"><%= draw1.player.name %></td>
+        <td class="typ">( <%= draw1.player.team %> )</td>
+        <td class="points"><%= draw1.first_round %></td>
+      </tr>
+      <tr class="div<%= index = padding(index) %><%= color_and_comparison_first(draw2, draw1) %>">
+        <td class="typ"><%= draw2.draw %></td>
+        <td class="typ"><%= draw2.player.name %></td>
+        <td class="typ">( <%= draw2.player.team %> )</td>
+        <td class="points"><%= draw2.first_round %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
