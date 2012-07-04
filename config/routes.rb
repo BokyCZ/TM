@@ -1,5 +1,7 @@
 TM::Application.routes.draw do
 
+  devise_for :admins
+
   root to: 'tm_open#index'
 
   resources :tm_open, only: [:index]
@@ -8,6 +10,7 @@ TM::Application.routes.draw do
   resources :help, only: [:index]
   resources :registrations
   resources :qualifications
+  resources :admins
   resources :competitions, only: [:index] do
     get :first, on: :collection
     get :second, on: :collection
@@ -16,6 +19,8 @@ TM::Application.routes.draw do
     get :semifinal, on: :collection
     get :final, on: :collection
   end
+
+
 
   #, only: [:index, :show, :new, :create]
 
