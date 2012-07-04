@@ -18,12 +18,12 @@
       <div class="logo_img"><p class="text">TM OPEN</p></div>
     </div>
     <ul class="menu">
-      <li><a href="/tm_open">TM Open</a></li>
-      <li><a href="/rules">Pravidla</a></li>
-      <li><a href="/registrations">Registrace</a></li>
-      <li><a href="/qualifications">Kvalifikace</a></li>
-      <li><a href="/competitions">Hlavní soutěž</a></li>
-      <li><a href="/administrations">Administrace</a></li>
+      <li><%= link_to("TM Open", '/tm_open') %></li>
+      <li><%= link_to("Pravidla", rules_path) %></li>
+      <li><%= link_to("Registrace", registrations_path) %></li>
+      <li><%= link_to("Kvalifikace", qualifications_path) %></li>
+      <li><%= link_to("Hlavní soutěž", competitions_path) %></li>
+      <li><%= link_to("Administrace", '/administrations') %></li>
     </ul>
   </div>
 </div>
@@ -36,9 +36,9 @@
   <div class="text">
     <p class="copyright">Copyright all rights reserved 2012 BokyCZ</p>
     <p class="link">|</p>
-    <a href="/help" class="reference">Help</a>
+    <%= link_to("Help", '/help') %>
     <p class="link">|</p>
-    <a href="/contacts" class="reference">Contact</a>
+    <%= link_to("Contact", '/contact') %>
   </div>
 </div>
 </body>

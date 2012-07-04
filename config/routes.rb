@@ -4,10 +4,10 @@ TM::Application.routes.draw do
 
   resources :tm_open, only: [:index]
   resources :rules, only: [:index]
+  resources :contact, only: [:index]
+  resources :help, only: [:index]
   resources :registrations
   resources :qualifications
-  resources :contacts, only: [:index]
-  resources :help, only: [:index]
   resources :competitions, only: [:index] do
     get :first, on: :collection
     get :second, on: :collection

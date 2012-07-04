@@ -9,118 +9,118 @@
   font-size: 17px;
   font-weight: bold;
 }
-/* line 11, ../../app/assets/stylesheets/competitions.css.scss */
-.index table tr td {
-  height: 25px;
-  width: 120px;
-  text-align: center;
+/* line 10, ../../app/assets/stylesheets/competitions.css.scss */
+.index ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 0px 17px;
 }
 
-/* line 20, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 18, ../../app/assets/stylesheets/competitions.css.scss */
 .round {
   padding-top: 10px;
   padding-bottom: 50px;
 }
-/* line 23, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 21, ../../app/assets/stylesheets/competitions.css.scss */
 .round a {
   text-decoration: none;
   color: yellow;
   font-size: 17px;
   font-weight: bold;
 }
-/* line 31, ../../app/assets/stylesheets/competitions.css.scss */
-.round table tr td {
-  height: 25px;
-  width: 120px;
-  text-align: center;
+/* line 28, ../../app/assets/stylesheets/competitions.css.scss */
+.round ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 0px 17px;
 }
 
-/* line 40, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 36, ../../app/assets/stylesheets/competitions.css.scss */
 .div_competition {
   width: 520px;
   margin: 0px auto;
 }
 
-/* line 45, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 41, ../../app/assets/stylesheets/competitions.css.scss */
 h1.competition {
   text-align: center;
 }
 
-/* line 49, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 45, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition {
   padding-bottom: 20px;
 }
-/* line 51, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 47, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div10 {
   color: red;
   font-size: 13px;
   font-weight: bold;
   padding-bottom: 0px;
 }
-/* line 56, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 52, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div10 td.typ {
   height: 15px;
   width: 150px;
   text-align: left;
 }
-/* line 61, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 57, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div10 td.points {
   height: 15px;
   width: 50px;
   text-align: center;
 }
-/* line 67, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 63, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div11 {
   color: #C2C2C2;
   font-size: 13px;
   font-weight: bold;
 }
-/* line 71, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 67, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div11 td.typ {
   height: 15px;
   width: 150px;
   text-align: left;
 }
-/* line 76, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 72, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div11 td.points {
   height: 15px;
   width: 50px;
   text-align: center;
 }
-/* line 82, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 78, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div20 {
   color: red;
   font-size: 13px;
   font-weight: bold;
 }
-/* line 86, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 82, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div20 td.typ {
   height: 15px;
   width: 150px;
   text-align: left;
   padding-bottom: 20px;
 }
-/* line 92, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 88, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div20 td.points {
   height: 15px;
   width: 50px;
   text-align: center;
   padding-bottom: 20px;
 }
-/* line 99, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 95, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div21 {
   color: #C2C2C2;
   font-size: 13px;
   font-weight: bold;
 }
-/* line 103, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 99, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div21 td.typ {
   height: 15px;
   width: 150px;
   text-align: left;
   padding-bottom: 20px;
 }
-/* line 109, ../../app/assets/stylesheets/competitions.css.scss */
+/* line 105, ../../app/assets/stylesheets/competitions.css.scss */
 table.competition tr.div21 td.points {
   height: 15px;
   width: 50px;

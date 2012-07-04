@@ -6,14 +6,12 @@
     font-size: 17px;
     font-weight: bold;
   }
-  table {
-  tr {
-    td {
-      height: 25px;
-      width: 120px;
-      text-align: center;
+  ul {
+    li {
+      list-style-type: none;
+      display: inline;
+      padding: 0px 17px;
     }
-  }
   }
 }
 
@@ -26,13 +24,11 @@
     font-size: 17px;
     font-weight: bold;
   }
-  table {
-    tr {
-      td {
-        height: 25px;
-        width: 120px;
-        text-align: center;
-      }
+  ul {
+    li {
+      list-style-type: none;
+      display: inline;
+      padding: 0px 17px;
     }
   }
 }
