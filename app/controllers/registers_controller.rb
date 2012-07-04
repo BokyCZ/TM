@@ -1,4 +1,4 @@
-class RegistrationsController < ApplicationController
+class RegistersController < ApplicationController
 
   def index
     @player = Player.ordered_by_name
@@ -17,7 +17,7 @@ class RegistrationsController < ApplicationController
     @player.qualification = Qualification.new(params[:default])
 
     if @player.save
-      redirect_to registration_path(@player), notice: 'Registrace probehla v poradku'
+      redirect_to register_path(@player), notice: 'Registrace probehla v poradku'
     else
       render action: "new"
     end

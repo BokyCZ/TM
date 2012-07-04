@@ -1,7 +1,7 @@
-<%= form_for @player, :url => { :action => "create", :controller => "registrations" } do |f| %>
+<%= form_for @player, :url => { :action => "create", :controller => "registers" } do |f| %>
   <% if @player.errors.any? %>
     <div class="error_message">
-      <h2>Při registraci se vyskytly tyto problémy:</h2>
+      <h2>Při evidenci se vyskytly tyto problémy:</h2>
       <ul>
         <% @player.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>

@@ -1,3 +1,35 @@
-// Place all the styles related to the Admins controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.body_form {
+  width: 345px;
+}
+
+.form {
+  padding-bottom: 20px;
+  padding-left: 95px;
+  label {
+    color: #C2C2C2;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+input#admin_email {
+  width: 175px;
+  height: 20px;
+  margin-left: 0px;
+  margin-top: 3px;
+}
+
+input#admin_password {
+  width: 175px;
+  height: 20px;
+  margin-left: 0px;
+  margin-top: 3px;
+}
+
+.redirect {
+  text-decoration: underline;
+  color: yellow;
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}

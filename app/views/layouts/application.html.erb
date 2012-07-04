@@ -4,10 +4,11 @@
   <title>TM-Open</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= stylesheet_link_tag    "rules", :media => "all" %>
-  <%= stylesheet_link_tag    "registrations", :media => "all" %>
+  <%= stylesheet_link_tag    "registers", :media => "all" %>
   <%= stylesheet_link_tag    "qualifications", :media => "all" %>
   <%= stylesheet_link_tag    "contacts", :media => "all" %>
   <%= stylesheet_link_tag    "competitions", :media => "all" %>
+  <%= stylesheet_link_tag    "admins", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -20,7 +21,7 @@
     <ul class="menu">
       <li><%= link_to("TM Open", '/tm_open') %></li>
       <li><%= link_to("Pravidla", rules_path) %></li>
-      <li><%= link_to("Registrace", registrations_path) %></li>
+      <li><%= link_to("Registrace", registers_path) %></li>
       <li><%= link_to("Kvalifikace", qualifications_path) %></li>
       <li><%= link_to("Hlavní soutěž", competitions_path) %></li>
       <li><%= link_to("Administrace", '/admins') %></li>
