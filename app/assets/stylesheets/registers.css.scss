@@ -47,30 +47,46 @@ table.registrations {
     font-weight: bold;
   }
 }
+.form_register {
+  padding-bottom: 20px;
+  padding-left: 95px;
+    input {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      width: 110px;
+      height: 25px;
+      margin-left: 19px;
+    }
+}
 
 input#player_name {
   width: 150px;
   height: 17px;
   margin-left: 0px;
   margin-top: 3px;
+  text-align: left;
 }
 input#player_team {
   width: 150px;
   height: 17px;
   margin-left: 0px;
   margin-top: 3px;
+  text-align: left;
 }
 input#player_sex{
   width: 150px;
   height: 17px;
   margin-left: 0px;
   margin-top: 3px;
+  text-align: left;
 }
 input#player_age {
   width: 150px;
   height: 17px;
   margin-left: 0px;
   margin-top: 3px;
+  text-align: left;
 }
 
 select#player_sex {
@@ -78,13 +94,6 @@ select#player_sex {
   height: 23px;
   margin-left: 0px;
   margin-top: 3px;
-}
-
-input {
-  width: 110px;
-  height: 25px;
-  text-align: left;
-  margin-left: 19px;
 }
 
 .error_message {

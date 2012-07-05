@@ -72,6 +72,8 @@ a {
   width: 759px;
   height: 199px;
   margin: 0px auto;
+  p {
+    width: 340px;  }
 }
 
 .headers {
@@ -95,6 +97,21 @@ ul.menu {
     color: #262626;
     font-weight: bold;
     font-size: 16px;
+  }
+}
+
+.sign{
+  min-width: 350px;
+  margin-top: -4px;
+  margin-left: 70%;
+  p {
+    display: inline;
+    font-size: 11px;
+  }
+  a {
+    font-size: 11px;
+    text-decoration: none;
+    padding-left: 25px;
   }
 }
 

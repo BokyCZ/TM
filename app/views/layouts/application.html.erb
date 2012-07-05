@@ -27,6 +27,12 @@
       <li><%= link_to("Administrace", '/admins') %></li>
     </ul>
   </div>
+  <div class="sign">
+    <% if admin_signed_in? %>
+      <p>Přihlášen jako <%= current_admin.email %></p>
+      <%= link_to "Odhlásit se", destroy_admin_session_path, :method => :delete %>
+    <% end %>
+  </div>
 </div>
 
 <div class="body">

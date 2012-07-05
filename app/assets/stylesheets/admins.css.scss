@@ -11,19 +11,39 @@
     font-weight: bold;
   }
 }
+.form_admin {
+  padding-bottom: 20px;
+  padding-left: 95px;
+  input {
+    font-size: 14px;
+    font-weight: bold;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    margin-left: 33px;
+  }
+}
 
 input#admin_email {
   width: 175px;
   height: 20px;
   margin-left: 0px;
   margin-top: 3px;
+  text-align: left;
 }
-
 input#admin_password {
   width: 175px;
   height: 20px;
   margin-left: 0px;
   margin-top: 3px;
+  text-align: left;
+}
+input#admin_password_confirmation {
+  width: 175px;
+  height: 20px;
+  margin-left: 0px;
+  margin-top: 3px;
+  text-align: left;
 }
 
 .redirect {
@@ -32,4 +52,25 @@ input#admin_password {
   font-size: 13px;
   font-weight: bold;
   padding-bottom: 20px;
+}
+
+.error_message {
+  background-color: #f2dede;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eed3d7;
+  border-radius: 40px;
+  width: 330px;
+  min-height: 0px;
+  h2 {
+    color: #B94A48;
+    text-align: center;
+  }
+  ul {
+    color: #B94A48;
+    list-style-type: none;
+    padding-left: 14px;
+    font-size: 14px;
+  }
 }

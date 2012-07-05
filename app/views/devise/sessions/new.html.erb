@@ -16,12 +16,12 @@
 
     <% if devise_mapping.rememberable? -%>
       <div class="form">
-        <%= f.check_box :remember_me %> <%= f.label :remember_me, "Zůstat přihlášen" %>
+        <%= f.check_box :remember_me %><%= f.label :remember_me, "Zůstat přihlášen" %>
       </div>
     <% end -%>
 
-    <div class="form">
-      <div><%= f.submit "PŘIHLÁSIT SE" %></div>
+    <div class="form_admin">
+      <%= f.submit "PŘIHLÁSIT SE" %>
     </div>
   </div>
 <% end %>

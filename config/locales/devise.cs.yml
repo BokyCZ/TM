@@ -5,8 +5,8 @@ cs:
       already_confirmed: "byl již potvrzen, prosím, zkuste se přihlásit"
       not_locked: "nebyl uzamčen"
       not_saved:
-        one: "%{resource} nebyl uložen kvůli chybě:"
-        other: "%{resource} nebyl uložen kvůli %{count} chybám:"
+        one: "Administrátor nebyl uložen kvůli chybě:" # "%{resource} nebyl uložen kvůli chybě:
+        other: "Administrátor nebyl uložen kvůli %{count} chybám:" # "%{resource} nebyl uložen kvůli %{count} chybám:"
 
   devise:
     failure:

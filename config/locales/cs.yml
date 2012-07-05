@@ -6,6 +6,9 @@ cs:
         team: "Název týmu"
         sex: "Pohlaví"
         age: "Věk"
+      admin:
+        password: "Heslo"
+        email: "Přihlašovací email"
     errors:
       models:
         player:
