@@ -11,6 +11,13 @@ cs:
         second: "2. týden"
         third: "3. týden"
         fourth: "4. týden"
+      competition:
+        first_round: "Body za první kolo"
+        second_round: "Body za druhé kolo"
+        third_round: "Body za osmifinále"
+        quarterfinal_round: "Body za čtvrtfinále"
+        semifinal_round: "Body za semifinále"
+        final_round: "Body za finále"
       admin:
         password: "Heslo"
         email: "Přihlašovací email"

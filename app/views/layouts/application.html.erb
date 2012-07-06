@@ -6,7 +6,7 @@
   <%= stylesheet_link_tag    "rules", :media => "all" %>
   <%= stylesheet_link_tag    "registers", :media => "all" %>
   <%= stylesheet_link_tag    "qualifications", :media => "all" %>
-  <%= stylesheet_link_tag    "contacts", :media => "all" %>
+  <%= stylesheet_link_tag    "contact", :media => "all" %>
   <%= stylesheet_link_tag    "competitions", :media => "all" %>
   <%= stylesheet_link_tag    "admins", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -26,6 +26,8 @@
       <li><%= link_to("Hlavní soutěž", competitions_path) %></li>
       <% if admin_signed_in? == false %>
         <li><%= link_to("Administrace", '/admins') %></li>
+        <% else %>
+        <li><%= link_to("Aktulizace HS", check_competition_competitions_path) %></li>
       <% end %>
     </ul>
   </div>

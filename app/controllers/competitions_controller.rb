@@ -30,6 +30,9 @@ class CompetitionsController < ApplicationController
   def generate_competition
   end
 
+  def check_competition
+  end
+
   def edit_first
     @competition = Competition.find(params[:id])
   end

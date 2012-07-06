@@ -12,19 +12,11 @@ TM::Application.routes.draw do
 
   resources :registers
 
-  resources :qualifications do
-    get :edit_week_1, on: :collection
-    get :edit_week_2, on: :collection
-    get :edit_week_3, on: :collection
-    get :edit_week_4, on: :collection
-    put :update_week_1, on: :collection
-    put :update_week_2, on: :collection
-    put :update_week_3, on: :collection
-    put :update_week_4, on: :collection
-  end
+  resources :qualifications, only: [:index, :edit, :update]
 
   resources :competitions, only: [:index] do
     get :generate_competition, on: :collection
+    get :check_competition, on: :collection
     get :first, on: :collection
     get :second, on: :collection
     get :third, on: :collection

@@ -1,5 +1,12 @@
 <h1>Úprava evidovaných údajů</h1>
 
+<div class="qualification">
+  <h3>Jméno manažera: </h3><p><%= @competition.player.name %></p><br>
+  <h3>Název týmu: </h3><p><%= @competition.player.team %></p><br>
+  <h3>Pohlaví: </h3><p><%= @competition.player.sex %></p><br>
+  <h3>Věk: </h3><p><%= @competition.player.age %></p>
+</div>
+
 <%= form_for @competition, :url => { :action => "update_third", :controller => "competitions" } do |f| %>
   <% if @competition.errors.any? %>
     <div class="error_message">
@@ -25,7 +32,7 @@
       <%= f.text_field :third_round %>
     </div>
     <div class="form_register">
-      <%= f.submit "EVIDOVAT" %>
+      <%= f.submit "UPRAVIT" %>
     </div>
   </div>
 <% end %>

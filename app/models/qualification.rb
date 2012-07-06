@@ -23,8 +23,9 @@ class Qualification < ActiveRecord::Base
     self.standings = standings
   end
 
-  def saving
-    save
+  before_update do
+    self.total = total
+    self.standings = standings
   end
 
 end
