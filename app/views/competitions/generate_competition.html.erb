@@ -1,0 +1,26 @@
+<% generate_draws %>
+
+<h1>Vygenerová hlavní soutěž</h1>
+
+<table class="generate_competition">
+  <tr class="div_c">
+    <th class="draw">Nalosované číslo</th>
+    <th class="name">Jméno</th>
+    <th class="name">Název týmu</th>
+    <th class="sex">Pohlaví</th>
+    <th class="age">Věk</th>
+    <th class="standings">Pořadí z kvalifikace</th>
+  </tr>
+
+  <% @competitions = Competition.order("draw") %>
+  <% @competitions.each do |competition| %>
+    <tr class="div_c">
+      <td class="draw"><%= competition.draw %></td>
+      <td class="name"><%= competition.player.name %></td>
+      <td class="name"><%= competition.player.team %></td>
+      <td class="sex"><%= competition.player.sex %></td>
+      <td class="age"><%= competition.player.age %></td>
+      <td class="standings"><%= competition.player.qualification.standings %></td>
+    </tr>
+  <% end %>
+</table>

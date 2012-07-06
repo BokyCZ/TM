@@ -23,6 +23,9 @@
         <td class="typ">( <%= draw1.player.team %> )</td>
         <td class="points"><%= draw1.second_round %></td>
         <td class="points"><%= draw1.player.qualification.standings %></td>
+        <% if admin_signed_in? %>
+          <td class="ref"><%= link_to 'Upravit', edit_second_competition_path(draw1) %></td>
+        <% end %>
       </tr>
       <tr class="div<%= index = padding(index) %><%= color_and_comparison_second(draw2, draw1) %>">
         <td class="points"><%= draw2.draw %></td>
@@ -30,6 +33,9 @@
         <td class="typ">( <%= draw2.player.team %> )</td>
         <td class="points"><%= draw2.second_round %></td>
         <td class="points"><%= draw2.player.qualification.standings %></td>
+        <% if admin_signed_in? %>
+          <td class="ref"><%= link_to 'Upravit', edit_second_competition_path(draw2) %></td>
+        <% end %>
       </tr>
     <% end %>
   </table>

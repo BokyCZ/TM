@@ -1,0 +1,31 @@
+<h1>Úprava evidovaných údajů</h1>
+
+<%= form_for @competition, :url => { :action => "update_third", :controller => "competitions" } do |f| %>
+  <% if @competition.errors.any? %>
+    <div class="error_message">
+      <h2>Při úpravě se vyskytly tyto problémy:</h2>
+      <ul>
+        <% @competition.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% @competition.first_round = @competition.first_round %>
+  <% @competition.second_round = @competition.second_round %>
+  <% @competition.quarterfinal_round = @competition.quarterfinal_round %>
+  <% @competition.semifinal_round = @competition.semifinal_round %>
+  <% @competition.final_round = @competition.final_round %>
+
+  <div class="body_form">
+    <div class="form">
+      <%= f.label :third_round, "Body za osmifinále:" %>
+      <div class="r"></div>
+      <%= f.text_field :third_round %>
+    </div>
+    <div class="form_register">
+      <%= f.submit "EVIDOVAT" %>
+    </div>
+  </div>
+<% end %>

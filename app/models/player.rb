@@ -5,9 +5,9 @@ class Player < ActiveRecord::Base
   attr_accessible :name, :team, :sex, :age
 
   has_one :qualification, :dependent => :destroy
-  has_one :competition,   :dependent => :destroy
+  has_one :competition
 
-  validate :validate_tm, :on => :create
+  validate :validate_tm
   validates :name, :presence => true, :uniqueness => true
   validates :team, :presence => true, :uniqueness => true
   validates :sex,  :presence => true

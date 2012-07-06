@@ -3,7 +3,6 @@
 <table class="qualifications">
   <tr class="div_q">
     <th class="name">Jméno</th>
-    <th class="name">Název týmu</th>
     <th class="week">1. týden</th>
     <th class="week">2. týden</th>
     <th class="week">3. týden</th>
@@ -13,16 +12,28 @@
   </tr>
 
    <% @qualifications.each do |qualification| %>
+    <% qualification.saving %>
     <% qualification1 = qualification.total %>
     <tr class="div_q<%= colorQualificationClass(qualification1) %>">
       <td class="name"><%= qualification.player.name %></td>
-      <td class="name"><%= qualification.player.team %></td>
       <td class="week"><%= qualification.first %></td>
       <td class="week"><%= qualification.second %></td>
       <td class="week"><%= qualification.third %></td>
       <td class="week"><%= qualification.fourth %></td>
-      <td class="week"><%= qualification.total %></td>
+      <td class="total"><%= qualification.total %></td>
       <td class="standings"><%= qualification.standings %></td>
+      <% if admin_signed_in? %>
+        <td class="ref"><%= link_to 'Upravit', edit_qualification_path(qualification) %></td>
+      <% end %>
+    </tr>
+  <% end %>
+  <% if admin_signed_in? %>
+    <tr class="div_q">
+      <td class="name"></td>
+      <td class="week"><%= link_to 'Upravit', edit_week_1_qualifications_path %></td>
+      <td class="week"><%= link_to 'Upravit', edit_week_2_qualifications_path %></td>
+      <td class="week"><%= link_to 'Upravit', edit_week_3_qualifications_path %></td>
+      <td class="week"><%= link_to 'Upravit', edit_week_4_qualifications_path %></td>
     </tr>
   <% end %>
 </table>

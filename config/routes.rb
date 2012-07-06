@@ -8,16 +8,41 @@ TM::Application.routes.draw do
   resources :rules, only: [:index]
   resources :contact, only: [:index]
   resources :help, only: [:index]
+  resources :admins, only: [:index]
+
   resources :registers
-  resources :qualifications
-  resources :admins
+
+  resources :qualifications do
+    get :edit_week_1, on: :collection
+    get :edit_week_2, on: :collection
+    get :edit_week_3, on: :collection
+    get :edit_week_4, on: :collection
+    put :update_week_1, on: :collection
+    put :update_week_2, on: :collection
+    put :update_week_3, on: :collection
+    put :update_week_4, on: :collection
+  end
+
   resources :competitions, only: [:index] do
+    get :generate_competition, on: :collection
     get :first, on: :collection
     get :second, on: :collection
     get :third, on: :collection
     get :quarterfinal, on: :collection
     get :semifinal, on: :collection
     get :final, on: :collection
+    get :edit_first, on: :member
+    get :edit_second, on: :member
+    get :edit_third, on: :member
+    get :edit_quarterfinal, on: :member
+    get :edit_semifinal, on: :member
+    get :edit_final, on: :member
+    put :update_first, on: :member
+    put :update_second, on: :member
+    put :update_third, on: :member
+    put :update_quarterfinal, on: :member
+    put :update_semifinal, on: :member
+    put :update_final, on: :member
   end
 
 

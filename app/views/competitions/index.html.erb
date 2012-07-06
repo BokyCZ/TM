@@ -13,15 +13,8 @@
   </ul>
 </div>
 
-<% # no =  [1..64].map{|i| i.to_a}.flatten %>
-<% # @players = Player.qualified %>
-<% # @players.each do |player| %>
-  <%
-       # index  = (1..1).map{ no[rand(no.length)] }.join
-       # index = index.to_i
-       # player.competition = Competition.new(:draw => index)
-       # pole = [index]
-       # no = no - pole
- %>
-<% # end %>
-
+<% if admin_signed_in? %>
+  <div class="generate">
+    <%= link_to "GENEROVAT HLAVNÍ SOUTĚŽ", generate_competition_competitions_path, :confirm => 'Pozor přemažete již vygenerovanou hlavní soutěž' %>
+  </div>
+<% end %>

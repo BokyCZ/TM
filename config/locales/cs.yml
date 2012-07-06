@@ -6,6 +6,11 @@ cs:
         team: "Název týmu"
         sex: "Pohlaví"
         age: "Věk"
+      qualification:
+        first: "1. týden"
+        second: "2. týden"
+        third: "3. týden"
+        fourth: "4. týden"
       admin:
         password: "Heslo"
         email: "Přihlašovací email"

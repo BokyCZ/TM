@@ -3,8 +3,12 @@ class Qualification < ActiveRecord::Base
 
   belongs_to :player
 
+  validates :first,   :presence => true, :numericality => {:only_integer => true, :greater_than => 0}
+  validates :second,  :presence => true, :numericality => {:only_integer => true, :greater_than => 0}
+  validates :third,   :presence => true, :numericality => {:only_integer => true, :greater_than => 0}
+  validates :fourth,  :presence => true, :numericality => {:only_integer => true, :greater_than => 0}
+
   scope :ordered_by_standings, order("standings")
-  scope :qualified, order("standings").limit(64)
 
   def total
     first + second + third + fourth
@@ -15,8 +19,12 @@ class Qualification < ActiveRecord::Base
   end
 
   before_save do
-    self.standings = standings
     self.total = total
+    self.standings = standings
+  end
+
+  def saving
+    save
   end
 
 end

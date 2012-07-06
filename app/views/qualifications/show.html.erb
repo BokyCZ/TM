@@ -1,2 +1,30 @@
-<h1>Qualifications#show</h1>
-<p>Find me in app/views/qualifications/show.html.erb</p>
+<h1>Úprava evidovaných údajů</h1>
+
+<div class="qualification">
+  <h3>Jméno manažera: </h3><p><%= @qualification.player.name %></p><br>
+  <h3>Název týmu: </h3><p><%= @qualification.player.team %></p><br>
+  <h3>Pohlaví: </h3><p><%= @qualification.player.sex %></p><br>
+  <h3>Věk: </h3><p><%= @qualification.player.age %></p>
+</div>
+
+<h3>1. týden:</h3>
+<p class="show">
+  <%= @qualification.first %>
+</p><br><br>
+
+<h3>2. týden:</h3>
+<p class="show">
+  <%= @qualification.second %>
+</p><br><br>
+
+<h3>3. týden:</h3>
+<p class="show">
+  <%= @qualification.third %>
+</p><br><br>
+
+<h3>4. týden:</h3>
+<p class="show">
+  <%= @qualification.fourth %>
+</p><br><br><br><br>
+
+<div class="redirect"><%= link_to("ZPĚT NA SEZNAM KVALIFIKACE", qualifications_path) %></div>

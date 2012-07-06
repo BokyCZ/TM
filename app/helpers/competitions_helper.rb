@@ -20,6 +20,21 @@ module CompetitionsHelper
     end
   end
 
+  def generate_draws
+    Competition.destroy_all
+    no =  [1..64].map{|i| i.to_a}.flatten
+    @players = Player.all
+    @players.each do |player|
+      if player.qualification.standings < 65
+        index  = (1..1).map{ no[rand(no.length)] }.join
+        index = index.to_i
+        player.competition = Competition.new(:draw => index)
+        pole = [index]
+        no = no - pole
+      end
+    end
+  end
+
   def padding(n)
     n = n + 1
     if (n % 2) == 1

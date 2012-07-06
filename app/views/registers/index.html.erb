@@ -2,18 +2,22 @@
 
 <table class="registrations">
   <tr>
-    <th>Jméno</th>
-    <th>Název týmu</th>
-    <th>Pohlaví</th>
-    <th>Věk</th>
+    <th class="name">Jméno</th>
+    <th class="name">Název týmu</th>
+    <th class="other">Pohlaví</th>
+    <th class="other">Věk</th>
   </tr>
 
-  <% @player.each do |player| %>
+  <% @players.each do |player| %>
     <tr>
-      <td><%= player.name %></td>
-      <td><%= player.team %></td>
-      <td><%= player.sex %></td>
-      <td><%= player.age %></td>
+      <td class="name"><%= player.name %></td>
+      <td class="name"><%= player.team %></td>
+      <td class="other"><%= player.sex %></td>
+      <td class="other"><%= player.age %></td>
+      <% if admin_signed_in? %>
+        <td class="ref"><%= link_to 'Upravit', edit_register_path(player) %></td>
+        <td class="ref"><%= link_to 'Odstranit', register_path(player), confirm: 'Opravdu chcete smazat tohoto manažera?', :method =>  :delete %></td>
+      <% end %>
     </tr>
   <% end %>
 </table>
